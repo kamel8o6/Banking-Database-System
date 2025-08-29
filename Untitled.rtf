@@ -1,48 +1,60 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;\f2\fnil\fcharset0 LucidaGrande;
-}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;\f2\froman\fcharset0 Times-Roman;
+\f3\fnil\fcharset134 STSongti-SC-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 # Banking Database System\
+\f0\fs24 \cf0 # 
+\f1 \uc0\u55356 \u57318 
+\f0  Banking System (C++ Project)\
 \
 ## 
 \f1 \uc0\u55357 \u56524 
 \f0  Overview\
-This project is a simple **banking information system** built using SQL.  \
-It simulates a small banking environment with **customers, accounts, and transactions**.  \
-The project demonstrates how to:\
-- Design a relational database schema.\
-- Insert and manage sample data.\
-- Run queries to extract useful banking insights.\
+This is a simple **Banking System** project written in **C++**.  \
+It simulates basic banking operations such as:\
+- Deposit\
+- Withdraw\
+- Show Transactions\
+- Exit\
+\
+The project was built and tested on **macOS** using `g++` and `make`.\
 \
 ---\
 \
 ## 
-\f1 \uc0\u55357 \u57056 \u65039 
-\f0  Files\
-- **banking_schema.sql** 
-\f2 \uc0\u8594 
-\f0  Script to create the database (`BankingSystem`) and tables (`Customers`, `Accounts`, `Transactions`).\
-- **sample_data.sql** 
-\f2 \uc0\u8594 
-\f0  Script with sample data for customers, accounts, and transactions.\
-- **queries.sql** 
-\f2 \uc0\u8594 
-\f0  Example queries to analyze balances, transactions, deposits, and withdrawals.\
+\f1 \uc0\u9881 \u65039 
+\f0  Requirements
+\f2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Example Output
+\f0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+- `g++` (comes with Xcode Command Line Tools on macOS)\
+- `make` (usually preinstalled on macOS/Linux)\
 \
----\
-\
-## 
-\f1 \uc0\u55357 \u56522 
-\f0  Example Queries\
-Some of the queries included:\
-- **Total Balance per Customer**\
-```sql\
-SELECT c.Name, SUM(a.Balance) AS TotalBalance\
-FROM Customers c\
-JOIN Accounts a ON c.CustomerID = a.CustomerID\
-GROUP BY c.Name;\
+Check installation:\
+```bash\
+g++ --version\
+make --version\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Example Output\
+1. Deposit\
+2. Withdraw\
+3. Show Transactions\
+0. Exit\
+Enter choice:\
+Project Structure\
+BankingSystem-Cpp/\
+
+\f3 \'a9\'c0\'a9\'a4\'a9\'a4
+\f2  main.cpp         # Source code\
+
+\f3 \'a9\'c0\'a9\'a4\'a9\'a4
+\f2  Makefile         # Build & run instructions\
+
+\f3 \'a9\'b8\'a9\'a4\'a9\'a4
+\f2  README.md        # Project description\
 }
